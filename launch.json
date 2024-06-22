@@ -1,0 +1,31 @@
+// This file is used to configure how the debugger behaves in VS Code.
+// It is used by the "Run and Debug" feature in VS Code.
+//
+// Each configuration specifies how to launch a debugger for a specific
+// program. In this case, the "Python: Current File" configuration launches
+// the Python debugger for the current file.
+//
+// The configuration is a JSON object with two top-level keys: "version" and
+// "configurations". The "version" key specifies the version of the configuration
+// file format. The "configurations" key is an array of configuration objects.
+//
+// Each configuration object has a "name" key that specifies the name of the
+// configuration, a "type" key that specifies the type of debugger to use, a
+// "request" key that specifies how to launch the debugger, and a "program"
+// key that specifies the path to the program to debug.
+
+{
+    "version": "0.2.0",
+    "configurations": [
+        
+        {
+            "name": "Ice Breaker Runner",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
